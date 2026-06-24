@@ -1,0 +1,106 @@
+# ----------------------------
+# Python bytecode / cache files
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ----------------------------
+# Test / coverage artifacts
+# ----------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache/
+
+# ----------------------------
+# Build / packaging artifacts
+# ----------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# ----------------------------
+# Virtual environments
+# ----------------------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ----------------------------
+# Local environment variables
+# ----------------------------
+.env
+.env.*
+!.env.example
+
+# ----------------------------
+# Allen / project-generated caches
+# ----------------------------
+.cache/
+allen_cache/
+allen-neuro-cache/
+*.nwb
+*.swc
+*.h5
+*.hdf5
+*.zarr/
+*.parquet
+
+# Allow test fixtures, including tiny SWC fixtures
+!tests/fixtures/
+!tests/fixtures/**
+!tests/fixtures/*.swc
+
+# ----------------------------
+# Logs
+# ----------------------------
+*.log
+logs/
+
+# ----------------------------
+# Jupyter / notebooks
+# ----------------------------
+.ipynb_checkpoints/
+
+# ----------------------------
+# macOS / OS junk
+# ----------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ----------------------------
+# IDE/editor files
+# ----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ----------------------------
+# mypy / ruff / pyright
+# ----------------------------
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.pyright/
+
+# ----------------------------
+# Misc local outputs
+# ----------------------------
+tmp/
+temp/
+outputs/
+artifacts/

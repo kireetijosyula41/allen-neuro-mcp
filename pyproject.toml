@@ -1,0 +1,14 @@
+[project]
+name = "allen-neuro-mcp"
+version = "0.2.0"
+description = "MCP workflows for Allen Cell Types data and computational neuroscience modeling."
+requires-python = ">=3.10"
+
+dependencies = [
+    "mcp>=1.28.0",
+    "pydantic>=2",
+    "allensdk>=2.16.2",
+]
+
+[project.scripts]
+allen-neuro-mcp = "allen_neuro_mcp.server:main"
