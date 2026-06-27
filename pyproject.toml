@@ -1,6 +1,6 @@
 [project]
 name = "allen-neuro-mcp"
-version = "0.2.0"
+version = "0.3.1"
 description = "MCP workflows for Allen Cell Types data and computational neuroscience modeling."
 requires-python = ">=3.10"
 
