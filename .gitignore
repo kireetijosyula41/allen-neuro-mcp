@@ -104,3 +104,7 @@ tmp/
 temp/
 outputs/
 artifacts/
+
+# Generated simulation outputs
+voltage_trace.csv
+voltage_trace.png
