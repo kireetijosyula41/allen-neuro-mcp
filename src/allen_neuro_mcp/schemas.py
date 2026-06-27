@@ -3,6 +3,8 @@ from typing import Any, Literal
 from pydantic import BaseModel, Field
 
 Species = Literal["mouse", "human"]
+SimulatorName = Literal["neuron"]
+
 
 
 class Provenance(BaseModel):
@@ -16,6 +18,26 @@ class Provenance(BaseModel):
     dataset: str = "Allen Cell Types Database"
     access_library: str = "AllenSDK"
     specimen_id: int | None = None
+
+
+class SimulatorProject(BaseModel):
+    """
+    Response from generate_simulator_project.
+
+    Represents a generated local simulator starter project.
+
+    v0.3 supports NEURON project scaffolds only. Later versions can add
+    Brian2 or other simulator backends.
+    """
+
+    specimen_id: int
+    simulator: SimulatorName
+    project_directory: str
+    files: list[str]
+    entrypoint: str
+    run_instructions: list[str]
+    warnings: list[str] = []
+    provenance: Provenance
     
 
 class CellSearchFilters(BaseModel):
